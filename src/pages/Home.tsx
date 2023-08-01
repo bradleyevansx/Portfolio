@@ -23,7 +23,7 @@ const Home = () => {
             textAlign={"center"}
             fontSize={{ base: "xl", md: "3xl" }}
           >
-            Web Devloper/Software Engineer
+            Web Developer/Software Engineer
           </Heading>
           <SocialsCard></SocialsCard>
         </Box>
