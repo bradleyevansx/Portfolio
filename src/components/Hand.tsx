@@ -4,7 +4,7 @@ import thumbs from "../assets/thumbsUp.png";
 const Hand = () => {
   return (
     <VStack
-      left={{ base: "-23%", sm: "10%", md: "30%", lg: "50%" }}
+      left={{ base: "-23%", sm: "10%", md: "30%", lg: "58%" }}
       top={{ base: "45%", sm: "50%" }}
       minWidth={"fit-content"}
       position={"absolute"}
