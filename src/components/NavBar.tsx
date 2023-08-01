@@ -1,3 +1,4 @@
+import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Button,
   Card,
@@ -11,7 +12,7 @@ import {
 import { FaHome } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import ColorModeSwitch from "./ColorModeSwitch";
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -20,6 +21,7 @@ const NavBar = () => {
   const placement = isMedium() ? "left" : "top";
   return (
     <>
+      <ColorModeSwitch></ColorModeSwitch>
       <HStack
         width={"100vw"}
         height={"100vh"}
@@ -38,8 +40,8 @@ const NavBar = () => {
       <Drawer isOpen={isOpen} placement={placement} onClose={onClose}>
         <DrawerContent
           width={{ base: "fit-content", lg: "fit-content" }}
-          height={{ base: "fit-content", lg: "inherit" }}
-          margin={{ base: "10px auto ", lg: "inherit" }}
+          height={{ base: "fit-content", lg: "fit-content" }}
+          margin={{ base: "10px auto ", lg: "auto 10px" }}
           shadow={"none"}
           bg={"unset"}
         >
