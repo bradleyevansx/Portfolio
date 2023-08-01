@@ -1,5 +1,4 @@
 import { Card, HStack, IconButton } from "@chakra-ui/react";
-import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const SocialsCard = () => {

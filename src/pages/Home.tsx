@@ -1,15 +1,5 @@
-import {
-  Box,
-  Button,
-  Card,
-  Heading,
-  HStack,
-  IconButton,
-  Text,
-} from "@chakra-ui/react";
-import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import Hand from "../components/Hand";
-import NavBar from "../components/NavBar";
 import SocialsCard from "../components/SocialsCard";
 
 const Home = () => {

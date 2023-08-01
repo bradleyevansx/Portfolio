@@ -1,4 +1,4 @@
-import { Box, Image, VStack } from "@chakra-ui/react";
+import { Image, VStack } from "@chakra-ui/react";
 import thumbs from "../assets/thumbsUp.png";
 
 const Hand = () => {
