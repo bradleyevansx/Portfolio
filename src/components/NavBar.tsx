@@ -9,12 +9,22 @@ import {
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
+import { useWindowSize } from "react-use";
 import ColorModeSwitch from "./ColorModeSwitch";
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const [availableHeight, setAvailableHeight] = useState(0);
+  const { height: windowHeight } = useWindowSize();
+
+  useEffect(() => {
+    const addressBarHeight = windowHeight - window.innerHeight;
+    setAvailableHeight(window.innerHeight - addressBarHeight);
+  }, [windowHeight]);
 
   const isMedium = () => useBreakpointValue({ base: false, lg: true });
 
@@ -24,7 +34,7 @@ const NavBar = () => {
       <ColorModeSwitch></ColorModeSwitch>
       <HStack
         width={"100vw"}
-        height={"100vh"}
+        height={availableHeight}
         alignItems={{ base: "start", lg: "center" }}
         justifyContent={{ base: "end", lg: "start" }}
         position={"absolute"}
