@@ -1,18 +1,10 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
-import { useWindowSize } from "react-use";
 import Hand from "../components/Hand";
 import SocialsCard from "../components/SocialsCard";
+import useViewportHeight from "../hooks/useViewportHeight";
 
 const Home = () => {
-  const [availableHeight, setAvailableHeight] = useState(0);
-  const { height: windowHeight } = useWindowSize();
-
-  useEffect(() => {
-    // Calculate the available height by subtracting the address bar height (approx. 80px)
-    const addressBarHeight = windowHeight - window.innerHeight;
-    setAvailableHeight(window.innerHeight - addressBarHeight);
-  }, [windowHeight]);
+  const availableHeight = useViewportHeight();
 
   return (
     <div>
@@ -21,6 +13,7 @@ const Home = () => {
         <Box margin={"auto 0"}>
           <Heading letterSpacing={"-3px"} fontSize={{ base: "6xl", md: "8xl" }}>
             <Text
+              whiteSpace={"nowrap"}
               width={{ base: 370, md: 600 }}
               bgClip="text"
               textAlign={"center"}

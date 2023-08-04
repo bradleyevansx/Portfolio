@@ -41,6 +41,7 @@ const NavBar = () => {
         padding={5}
       >
         <IconButton
+          zIndex={"101"}
           display={isOpen ? "none" : "inherit"}
           icon={<HamburgerIcon></HamburgerIcon>}
           onClick={onOpen}
