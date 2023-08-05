@@ -1,5 +1,4 @@
-import { Box, Button, Heading, Text } from "@chakra-ui/react";
-import { LiaProjectDiagramSolid } from "react-icons/lia";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import Hand from "../components/Hand";
 import SocialsCard from "../components/SocialsCard";
 import useViewportHeight from "../hooks/useViewportHeight";
