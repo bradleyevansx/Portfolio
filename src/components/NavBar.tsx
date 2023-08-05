@@ -15,6 +15,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
 import { useWindowSize } from "react-use";
 import ColorModeSwitch from "./ColorModeSwitch";
+
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 

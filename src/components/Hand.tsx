@@ -12,7 +12,7 @@ const Hand = () => {
       x: 50,
       y: [-5, 5, -5],
       transition: {
-        x: { delay: 0.15 },
+        x: { delay: 0.5 },
         y: { repeat: Infinity, duration: 1.5, stiffness: 75 },
       },
     },
@@ -32,6 +32,7 @@ const Hand = () => {
     >
       <motion.div initial="hidden" animate="visible" variants={variant}>
         <Image
+          pointerEvents={"none"}
           minWidth={"300px"}
           mb={{ base: 20 }}
           src={thumbs}
