@@ -9,7 +9,7 @@ function App() {
       <motion.div
         animate={{
           opacity: [0, 1],
-          transition: { delay: 0.5, duration: 0.5, delayChildren: 0.5 },
+          transition: { delay: 0.5, duration: 0.5 },
         }}
       >
         <NavBar></NavBar>
