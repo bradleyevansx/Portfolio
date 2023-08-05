@@ -4,6 +4,7 @@ import {
   Card,
   Drawer,
   DrawerContent,
+  DrawerOverlay,
   HStack,
   IconButton,
   useBreakpointValue,
@@ -15,17 +16,13 @@ import { HiOutlineMail } from "react-icons/hi";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
 import { useWindowSize } from "react-use";
 import ColorModeSwitch from "./ColorModeSwitch";
+import { Link } from "react-router-dom";
+import useViewportHeight from "../hooks/useViewportHeight";
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const [availableHeight, setAvailableHeight] = useState(0);
-  const { height: windowHeight } = useWindowSize();
-
-  useEffect(() => {
-    const addressBarHeight = windowHeight - window.innerHeight;
-    setAvailableHeight(window.innerHeight - addressBarHeight);
-  }, [windowHeight]);
+  const availableHeight = useViewportHeight();
 
   const isMedium = () => useBreakpointValue({ base: false, lg: true });
 
@@ -50,7 +47,9 @@ const NavBar = () => {
         ></IconButton>
       </HStack>
       <Drawer isOpen={isOpen} placement={placement} onClose={onClose}>
+        <DrawerOverlay></DrawerOverlay>
         <DrawerContent
+          zIndex="1000"
           width={{ base: "fit-content", lg: "fit-content" }}
           height={{ base: "fit-content", lg: "fit-content" }}
           margin={{ base: "10px auto ", lg: "auto 10px" }}
