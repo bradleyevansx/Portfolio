@@ -7,7 +7,10 @@ function App() {
   return (
     <>
       <motion.div
-        animate={{ opacity: [0, 1], transition: { delay: 0.5, duration: 0.5 } }}
+        animate={{
+          opacity: [0, 1],
+          transition: { delay: 0.5, duration: 0.5, delayChildren: 0.5 },
+        }}
       >
         <NavBar></NavBar>
         <Home></Home>

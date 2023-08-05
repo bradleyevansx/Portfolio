@@ -6,13 +6,17 @@ import { motion } from "framer-motion";
 const Hand = () => {
   const variant = {
     hidden: {
-      x: 300,
+      x: 500,
+      opacity: 0,
     },
     visible: {
+      opacity: 1,
+
       x: 50,
       y: [-5, 5, -5],
       transition: {
-        x: { delay: 0.5 },
+        opacity: { delay: 0.7 },
+        x: { delay: 0.7 },
         y: { repeat: Infinity, duration: 1.5, stiffness: 75 },
       },
     },
