@@ -31,6 +31,7 @@ const RockHand = () => {
     >
       <motion.div
         style={{
+          overflow: "visible",
           width: "340px",
           display: "flex",
           gap: "10rem",

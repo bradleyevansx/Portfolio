@@ -1,5 +1,6 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import Hand from "../components/Hand";
+import Page from "../components/Page";
 import SocialsCard from "../components/SocialsCard";
 import useViewportHeight from "../hooks/useViewportHeight";
 
@@ -7,7 +8,7 @@ const Home = () => {
   const availableHeight = useViewportHeight();
 
   return (
-    <div>
+    <Page id="home">
       <Hand></Hand>
       <Box display={"flex"} justifyContent={"center"} height={availableHeight}>
         <Box margin={"auto 0"}>
@@ -32,7 +33,7 @@ const Home = () => {
           <SocialsCard></SocialsCard>
         </Box>
       </Box>
-    </div>
+    </Page>
   );
 };
 

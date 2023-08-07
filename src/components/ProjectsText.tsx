@@ -29,10 +29,10 @@ const ProjectsText = () => {
         fontSize={{ base: "md", sm: "xl", md: "xl" }}
       >
         My portfolio showcases projects where I've utilized C#/.NET, Blazor,
-        .NET Web API, React, TypeScript, Azure, and CosmosDB. These technologies
-        have enabled me to build robust apps, dynamic web interfaces, efficient
-        APIs, and user-friendly experiences. My work reflects how I bring
-        creative solutions to different tech areas.
+        .NET Web API, React, TypeScript, and Azure. These technologies have
+        enabled me to build robust apps, dynamic web interfaces, efficient APIs,
+        and user-friendly experiences. My work underscores my commitment to
+        innovative solutions across diverse tech domains.
       </Heading>
     </Box>
   );

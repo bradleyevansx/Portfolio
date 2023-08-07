@@ -1,6 +1,6 @@
 import { Button, Card, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import studentApp from "../assets/PracticeApp.png";
+import studentApp from "../assets/studentAppPhotos/startVertical.png";
 import realEstateWebsite from "../assets/RealEstateWebsite.png";
 import API from "../assets/API.png";
 

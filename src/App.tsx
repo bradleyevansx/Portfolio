@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { motion } from "framer-motion";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./pages/Projects";
+import StudentApp from "./pages/studentApp/StudentApp";
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/student-app" element={<StudentApp />} />
         </Routes>
       </motion.div>
     </Router>

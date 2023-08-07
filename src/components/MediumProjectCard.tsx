@@ -1,8 +1,9 @@
 import { Button, Card, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import API from "../assets/API.png";
-import studentApp from "../assets/PracticeApp.png";
+import studentApp from "../assets/studentAppPhotos/startVertical.png";
 import realEstateWebsite from "../assets/RealEstateWebsite.png";
+import { Link } from "react-router-dom";
 
 const MediumProjectCard = () => (
   <Card
@@ -21,9 +22,11 @@ const MediumProjectCard = () => (
       style={{ position: "absolute" }}
       animate={{ rotate: -15, y: 27, x: -49 }}
     >
-      <Button bg={"whiteAlpha.200"} height={"370px"} width={"231px"}>
-        <Image src={studentApp}></Image>
-      </Button>
+      <Link to={"/projects/student-app"}>
+        <Button bg={"whiteAlpha.200"} height={"370px"} width={"231px"}>
+          <Image src={studentApp}></Image>
+        </Button>
+      </Link>
     </motion.div>
 
     <motion.div
