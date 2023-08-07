@@ -9,7 +9,6 @@ const Home = () => {
   return (
     <div>
       <Hand></Hand>
-
       <Box display={"flex"} justifyContent={"center"} height={availableHeight}>
         <Box margin={"auto 0"}>
           <Heading letterSpacing={"-3px"} fontSize={{ base: "6xl", md: "8xl" }}>

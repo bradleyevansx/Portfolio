@@ -35,20 +35,19 @@ const NavBar = () => {
 
   const isMedium = () => useBreakpointValue({ base: false, lg: true });
 
-  const [isReallyOpen, setIsReallyOpen] = useState(false); // Create a state variable
+  const [isReallyOpen, setIsReallyOpen] = useState(false);
 
   useEffect(() => {
     if (!isOpen) {
-      // Activate the timeout only if isOpen is changing from true to false
       const timeout = setTimeout(() => {
-        setIsReallyOpen(isOpen); // Update isReallyOpen after the delay
+        setIsReallyOpen(isOpen);
       }, 500);
 
       return () => {
-        clearTimeout(timeout); // Clear the timeout if the component unmounts or isOpen changes before the delay
+        clearTimeout(timeout);
       };
     } else {
-      setIsReallyOpen(isOpen); // Update isReallyOpen immediately for other cases
+      setIsReallyOpen(isOpen);
     }
   }, [isOpen]);
 
