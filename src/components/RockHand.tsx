@@ -1,8 +1,8 @@
-import { Box, HStack, Image, VStack } from "@chakra-ui/react";
+import { Box, HStack, Image } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import hand from "../assets/Rock1.png";
 import hand1 from "../assets/Rock2.png";
 import useViewportHeight from "../hooks/useViewportHeight";
-import { motion } from "framer-motion";
 
 const RockHand = () => {
   const variant = {
