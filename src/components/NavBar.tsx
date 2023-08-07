@@ -98,20 +98,26 @@ const NavBar = () => {
             animate={isOpen ? "visible" : "exit"}
           >
             <Card display={"flex"} gap={2} width={"fit-content"} padding={2}>
-              <Button
-                size={"lg"}
-                leftIcon={<FaHome size={25} />}
-                aria-label={""}
-              >
-                <Link to={"/"}>Home</Link>
-              </Button>
-              <Button
-                size={"lg"}
-                leftIcon={<LiaProjectDiagramSolid size={25} />}
-                aria-label={""}
-              >
-                <Link to="/projects">Projects</Link>
-              </Button>
+              <Link to={"/"}>
+                <Button
+                  size={"lg"}
+                  leftIcon={<FaHome size={25} />}
+                  aria-label={""}
+                  width={"160px"}
+                >
+                  Home
+                </Button>
+              </Link>
+              <Link to="/projects">
+                <Button
+                  size={"lg"}
+                  leftIcon={<LiaProjectDiagramSolid size={25} />}
+                  width={"160px"}
+                  aria-label={""}
+                >
+                  Projects
+                </Button>
+              </Link>
               <Button
                 size={"lg"}
                 leftIcon={<HiOutlineMail size={25} />}
