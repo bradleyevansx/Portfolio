@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import studentApp from "../assets/studentAppPhotos/startVertical.png";
 import realEstateWebsite from "../assets/RealEstateWebsite.png";
 import API from "../assets/API.png";
+import { Link } from "react-router-dom";
 
 const BaseProjectCard = () => (
   <Card
@@ -20,9 +21,11 @@ const BaseProjectCard = () => (
       style={{ position: "absolute" }}
       animate={{ rotate: -15, y: 10, x: -32, transition: { delay: 0.5 } }}
     >
-      <Button bg={"whiteAlpha.200"} height={60} width={40}>
-        <Image src={studentApp}></Image>
-      </Button>
+      <Link to="/projects/student-app">
+        <Button bg={"whiteAlpha.200"} height={60} width={40}>
+          <Image src={studentApp}></Image>
+        </Button>
+      </Link>
     </motion.div>
     <motion.div
       style={{ position: "absolute" }}
