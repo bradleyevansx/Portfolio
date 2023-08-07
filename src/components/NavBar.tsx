@@ -117,13 +117,15 @@ const NavBar = () => {
                   Projects
                 </Button>
               </Link>
-              <Button
-                size={"lg"}
-                leftIcon={<HiOutlineMail size={25} />}
-                aria-label={""}
-              >
-                Email Me
-              </Button>
+              <a href="mailto:bradleyevans.x@gmail.com">
+                <Button
+                  size={"lg"}
+                  leftIcon={<HiOutlineMail size={25} />}
+                  aria-label={""}
+                >
+                  Email Me
+                </Button>
+              </a>
             </Card>
           </motion.div>
         </motion.div>
