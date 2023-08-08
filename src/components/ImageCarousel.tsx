@@ -12,7 +12,14 @@ const ImageCarousel = () => {
   const photos = [login, detailView, listView, startHorizontal];
 
   return (
-    <Card overflow={"hidden"} variant={"filled"} width={"335px"}>
+    <Card
+      borderRadius={"lg"}
+      size={{ base: "unset", lg: "lg" }}
+      height={{ base: "163px", lg: "unset" }}
+      overflow={"hidden"}
+      variant={"filled"}
+      width={{ base: "335px", lg: "unset" }}
+    >
       <Box
         height={"100%"}
         alignItems="center"
