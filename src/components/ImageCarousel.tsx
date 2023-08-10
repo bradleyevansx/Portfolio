@@ -14,7 +14,6 @@ const ImageCarousel = () => {
   return (
     <Card
       borderRadius={"lg"}
-      size={{ base: "unset", lg: "lg" }}
       minWidth={{ base: "unset", lg: "316px" }}
       minHeight={{ base: "unset", lg: "154px" }}
       height={{ base: "163px", lg: "unset" }}
