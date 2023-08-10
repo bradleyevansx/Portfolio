@@ -15,10 +15,10 @@ const ImageCarousel = () => {
     <Card
       borderRadius={"lg"}
       size={{ base: "unset", lg: "lg" }}
-      height={{ base: "163px", lg: "unset" }}
+      height={{ base: "163px", lg: "initial" }}
       overflow={"hidden"}
       variant={"filled"}
-      width={{ base: "335px", lg: "unset" }}
+      width={{ base: "335px", lg: "initial" }}
     >
       <Box
         height={"100%"}
