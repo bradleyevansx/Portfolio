@@ -31,7 +31,7 @@ const StudentApp = () => {
               <IconButton
                 as={Link}
                 target="_blank"
-                href={"https://github.com/bradleyevansx"}
+                href={"https://github.com/bradleyevansx/StudentApp"}
                 size={"lg"}
                 aria-label="Git Hub"
                 icon={<FaGithub size={30} />}
