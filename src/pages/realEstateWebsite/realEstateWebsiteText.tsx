@@ -11,7 +11,7 @@ const RealEstateWebsiteText = () => (
       fontSize={{ base: "5xl", sm: "6xl", lg: "9xl" }}
     >
       <Text
-        width={"440px"}
+        width={{ base: "440px", lg: "unset" }}
         whiteSpace={"nowrap"}
         bgClip="text"
         textAlign={{ base: "center", lg: "start" }}
