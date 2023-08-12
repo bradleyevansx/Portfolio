@@ -1,17 +1,14 @@
 import { Box } from "@chakra-ui/react";
-import detailView from "../../assets/studentAppPhotos/detailView.png";
-import listView from "../../assets/studentAppPhotos/listView.png";
-import login from "../../assets/studentAppPhotos/login.png";
-import startHorizontal from "../../assets/studentAppPhotos/startHorizontal.png";
 import ImageCarousel from "../../components/ImageCarousel";
 import Page from "../../components/Page";
 import ProjectLinks from "../../components/ProjectLinks";
 import useViewportHeight from "../../hooks/useViewportHeight";
-import StudentAppText from "./StupentAppText";
+import WebApiText from "./WebApiText";
+import webApi from "../../assets/webApiPhotos/webApiHorizontal.png";
 
-const photos = [login, detailView, listView, startHorizontal];
+const photo = [webApi];
 
-const StudentApp = () => {
+const WebApi = () => {
   const availableHeight = useViewportHeight();
 
   return (
@@ -27,18 +24,21 @@ const StudentApp = () => {
         maxWidth={{ base: "unset", lg: "1357px" }}
         height={availableHeight}
       >
-        <StudentAppText></StudentAppText>
+        <WebApiText></WebApiText>
 
         <Box>
-          <ImageCarousel colorScheme="gray" photos={photos}></ImageCarousel>
+          <ImageCarousel
+            colorScheme="blackAlpha"
+            photos={photo}
+          ></ImageCarousel>
           <ProjectLinks
-            githubLink="https://github.com/bradleyevansx/StudentApp"
-            websiteLink="https://gray-sky-09e31dd10.3.azurestaticapps.net"
-          />
+            githubLink="https://github.com/bradleyevansx/WebApi"
+            websiteLink=""
+          ></ProjectLinks>
         </Box>
       </Box>
     </Page>
   );
 };
 
-export default StudentApp;
+export default WebApi;

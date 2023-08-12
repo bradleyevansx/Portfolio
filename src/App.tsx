@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./pages/Projects";
 import StudentApp from "./pages/studentApp/StudentApp";
+import WebApi from "./pages/webApi/WebApi";
+import RealEstateWebsite from "./pages/realEstateWebsite/realEstateWebsite";
 function App() {
   return (
     <Router>
@@ -18,7 +20,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+
           <Route path="/projects/student-app" element={<StudentApp />} />
+          <Route path="/projects/web-api" element={<WebApi />} />
+          <Route
+            path="/projects/realtor-website"
+            element={<RealEstateWebsite />}
+          />
         </Routes>
       </motion.div>
     </Router>

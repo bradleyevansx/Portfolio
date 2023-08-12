@@ -1,8 +1,8 @@
 import { Button, Card, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import API from "../assets/API.png";
+import API from "../assets/webApiPhotos/API.png";
 import studentApp from "../assets/studentAppPhotos/startVertical.png";
-import realEstateWebsite from "../assets/RealEstateWebsite.png";
+import realEstateWebsite from "../assets/realEstateWebsitePhotos/RealEstateWebsite.png";
 import { Link } from "react-router-dom";
 
 const MediumProjectCard = () => (
@@ -34,18 +34,22 @@ const MediumProjectCard = () => (
       style={{ position: "absolute" }}
       animate={{ y: 20 }}
     >
-      <Button bg={"whiteAlpha.200"} height={"370px"} width={"231px"}>
-        <Image src={API}></Image>
-      </Button>
+      <Link to="/projects/web-api">
+        <Button bg={"whiteAlpha.200"} height={"370px"} width={"231px"}>
+          <Image src={API}></Image>
+        </Button>
+      </Link>
     </motion.div>
     <motion.div
       whileHover={{ scale: 1.05, y: 15 }}
       style={{ position: "absolute" }}
       animate={{ rotate: 15, y: 27, x: 49 }}
     >
-      <Button bg={"whiteAlpha.200"} height={"370px"} width={"231px"}>
-        <Image src={realEstateWebsite}></Image>
-      </Button>
+      <Link to="/projects/realtor-website">
+        <Button bg={"whiteAlpha.200"} height={"370px"} width={"231px"}>
+          <Image src={realEstateWebsite}></Image>
+        </Button>
+      </Link>
     </motion.div>
   </Card>
 );

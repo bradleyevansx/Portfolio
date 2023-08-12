@@ -1,15 +1,14 @@
 import { Box, Card, IconButton, Image } from "@chakra-ui/react";
-import login from "../assets/studentAppPhotos/login.png";
-import detailView from "../assets/studentAppPhotos/detailView.png";
-import listView from "../assets/studentAppPhotos/listView.png";
-import startHorizontal from "../assets/studentAppPhotos/startHorizontal.png";
 import { useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
-const ImageCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+interface Props {
+  photos: string[];
+  colorScheme: "gray" | "blackAlpha";
+}
 
-  const photos = [login, detailView, listView, startHorizontal];
+const ImageCarousel = ({ photos, colorScheme }: Props) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <Card
@@ -30,6 +29,7 @@ const ImageCarousel = () => {
         position={"absolute"}
       >
         <IconButton
+          colorScheme={colorScheme}
           display={currentIndex === 0 ? "none" : "flex"}
           onClick={() => setCurrentIndex(currentIndex - 1)}
           size={"xs"}
@@ -40,6 +40,7 @@ const ImageCarousel = () => {
           icon={<ChevronLeftIcon />}
         />
         <IconButton
+          colorScheme={colorScheme}
           display={currentIndex + 1 === photos.length ? "none" : "flex"}
           ms="auto"
           onClick={() => setCurrentIndex(currentIndex + 1)}
