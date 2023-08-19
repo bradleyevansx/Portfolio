@@ -9,9 +9,7 @@ const SocialsCard = () => {
       <HStack>
         <IconButton
           as={Link}
-          href={
-            "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-          }
+          href={"https://www.linkedin.com/in/bradley-evans-b8ba701ba"}
           target="_blank"
           size={"lg"}
           aria-label="Linked In"
