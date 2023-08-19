@@ -30,7 +30,7 @@ const RealEstateWebsite = () => {
       >
         <RealEstateWebsiteText></RealEstateWebsiteText>
 
-        <Box>
+        <Box width={{ base: "unset", lg: "100%" }}>
           <ImageCarousel
             colorScheme="blackAlpha"
             photos={photos}

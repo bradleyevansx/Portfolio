@@ -29,7 +29,7 @@ const StudentApp = () => {
       >
         <StudentAppText></StudentAppText>
 
-        <Box>
+        <Box width={{ base: "unset", lg: "100%" }}>
           <ImageCarousel colorScheme="gray" photos={photos}></ImageCarousel>
           <ProjectLinks
             githubLink="https://github.com/bradleyevansx/StudentApp"

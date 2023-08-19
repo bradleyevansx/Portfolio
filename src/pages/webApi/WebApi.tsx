@@ -26,7 +26,7 @@ const WebApi = () => {
       >
         <WebApiText></WebApiText>
 
-        <Box>
+        <Box width={{ base: "unset", lg: "100%" }}>
           <ImageCarousel
             colorScheme="blackAlpha"
             photos={photo}
