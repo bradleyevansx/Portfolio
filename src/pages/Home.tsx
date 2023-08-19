@@ -12,7 +12,7 @@ const Home = () => {
       <Hand></Hand>
       <Box display={"flex"} justifyContent={"center"} height={availableHeight}>
         <Box margin={"auto 0"}>
-          <Heading letterSpacing={"-3px"} fontSize={{ base: "6xl", md: "8xl" }}>
+          <Heading letterSpacing={"-3px"} fontSize={{ base: "6xl", lg: "8xl" }}>
             <Text
               whiteSpace={"nowrap"}
               width={{ base: 370, md: 600 }}
