@@ -35,7 +35,7 @@ const SocialsCard = () => {
           as={Link}
           target="_blank"
           href={
-            "https://github.com/bradleyevansx/Resume/blob/main/Evans%20Resume.pdf"
+            "https://github.com/bradleyevansx/Resume/blob/main/bradleyResume.pdf"
           }
           size={"lg"}
           aria-label="Resume"
